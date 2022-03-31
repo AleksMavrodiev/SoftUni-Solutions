@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1 SecretChat", "1.1 SecretChat\1.1 SecretChat.csproj", "{E22FE795-208B-4D08-B5E2-4C96CCDD7CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MirrorWords", "2.MirrorWords\2.MirrorWords.csproj", "{A5D6A650-635D-45BA-8700-4F641181AC29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. NeedForSpeed3", "3. NeedForSpeed3\3. NeedForSpeed3.csproj", "{8C6A81D3-A891-4568-8DCC-1164C18BC926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. FancyBarcodes", "2. FancyBarcodes\2. FancyBarcodes.csproj", "{648D7595-936E-4E18-9F4F-F08851B6E8FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.PasswordReset", "1.PasswordReset\1.PasswordReset.csproj", "{377F12CA-D151-48D4-9102-43B8C0EA520A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Heroes of Code and Logic VII", "3.Heroes of Code and Logic VII\3.Heroes of Code and Logic VII.csproj", "{A9FF08A3-C2E9-4668-9F0E-7CEA6083CA36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E22FE795-208B-4D08-B5E2-4C96CCDD7CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22FE795-208B-4D08-B5E2-4C96CCDD7CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22FE795-208B-4D08-B5E2-4C96CCDD7CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22FE795-208B-4D08-B5E2-4C96CCDD7CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D6A650-635D-45BA-8700-4F641181AC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D6A650-635D-45BA-8700-4F641181AC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D6A650-635D-45BA-8700-4F641181AC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D6A650-635D-45BA-8700-4F641181AC29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6A81D3-A891-4568-8DCC-1164C18BC926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6A81D3-A891-4568-8DCC-1164C18BC926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6A81D3-A891-4568-8DCC-1164C18BC926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6A81D3-A891-4568-8DCC-1164C18BC926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{648D7595-936E-4E18-9F4F-F08851B6E8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648D7595-936E-4E18-9F4F-F08851B6E8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648D7595-936E-4E18-9F4F-F08851B6E8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{648D7595-936E-4E18-9F4F-F08851B6E8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377F12CA-D151-48D4-9102-43B8C0EA520A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377F12CA-D151-48D4-9102-43B8C0EA520A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377F12CA-D151-48D4-9102-43B8C0EA520A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377F12CA-D151-48D4-9102-43B8C0EA520A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9FF08A3-C2E9-4668-9F0E-7CEA6083CA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FF08A3-C2E9-4668-9F0E-7CEA6083CA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FF08A3-C2E9-4668-9F0E-7CEA6083CA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FF08A3-C2E9-4668-9F0E-7CEA6083CA36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBBE55D5-5F86-4BCE-B99E-96E1F3B888D6}
+	EndGlobalSection
+EndGlobal
