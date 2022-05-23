@@ -6,41 +6,34 @@ namespace _4._SymbolInMatrix
     {
         static void Main(string[] args)
         {
-            int input = int.Parse(Console.ReadLine());
-            int[,] matrice = new int[input, input];
-            int rowIndex = 0;
-            int colIndex = 0;
-            bool isFound = false;
-            for (int row = 0; row < matrice.GetLength(0); row++)
+            int n = int.Parse(Console.ReadLine());
+            char[,] matrix = new char[n, n];
+
+
+            for (int row = 0; row < n; row++)
             {
-                char[] line = Console.ReadLine().ToCharArray();
-                for (int col = 0; col < matrice.GetLength(1); col++)
+                int currColumn = 0;
+                string value = Console.ReadLine();
+                foreach (char ch in value)
                 {
-                    matrice[row, col] = line[col];
+                    matrix[row, currColumn] = ch;
+                    currColumn++;
                 }
             }
-            char symbolSeatched = char.Parse(Console.ReadLine());
-            for (int row = 0; row < matrice.GetLength(0); row++)
+            char symbol = char.Parse(Console.ReadLine());
+            for (int row = 0; row < n; row++)
             {
-                for (int col = 0; col < matrice.GetLength(1); col++)
+                for (int column = 0; column < n; column++)
                 {
-                    if (matrice[row, col] == symbolSeatched)
+                    if (matrix[row, column] == symbol)
                     {
-                        rowIndex = row;
-                        colIndex = col;
-                        isFound = true;
-                        break;
+                        Console.WriteLine($"({row}, {column})");
+                        Environment.Exit(0);
                     }
                 }
             }
-            if (isFound)
-            {
-                Console.WriteLine($"({rowIndex}, {colIndex})");
-            }
-            else
-            {
-                Console.WriteLine($"{symbolSeatched} does not occur in the matrix");
-            }
+
+            Console.WriteLine($"{symbol} does not occur in the matrix ");
         }
     }
 }
