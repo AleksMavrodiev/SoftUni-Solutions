@@ -1,0 +1,18 @@
+1. namespace LineNumbers
+2. {
+3.     using System.IO;
+4.     public class LineNumbers
+5.     {
+6.         static void Main()
+7.         {
+8.             string inputPath = @"..\..\..\Files\input.txt";
+9.             string outputPath = @"..\..\..\Files\output.txt";
+10. 
+11.             RewriteFileWithLineNumbers(inputPath, outputPath);
+12.         }
+13. 
+14.         public static void RewriteFileWithLineNumbers(string inputFilePath, string outputFilePath)
+15.         {
+16.         }
+17.     }
+18. }
