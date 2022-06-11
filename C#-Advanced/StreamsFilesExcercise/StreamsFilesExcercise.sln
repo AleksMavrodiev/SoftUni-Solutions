@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. EvenLines", "1. EvenLine
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. LineNumbers", "2. LineNumbers\2. LineNumbers.csproj", "{F4DC40F8-6D25-40C1-B86A-138B9775E41E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. ZipAndExtract", "6. ZipAndExtract\6. ZipAndExtract.csproj", "{CEE4A6B5-D916-4FBA-B4D3-360333A882E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. ZipAndExtract", "6. ZipAndExtract\6. ZipAndExtract.csproj", "{CEE4A6B5-D916-4FBA-B4D3-360333A882E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. CopyDirectory", "5. CopyDirectory\5. CopyDirectory.csproj", "{2DEBD964-8272-4961-B8DD-30E40DEFAEAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. CopyDirectory", "5. CopyDirectory\5. CopyDirectory.csproj", "{2DEBD964-8272-4961-B8DD-30E40DEFAEAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. CopyBinaryFile", "3. CopyBinaryFile\3. CopyBinaryFile.csproj", "{B081D9CE-120E-4443-86CE-DABCB962E114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. DirectoryTraverse", "4. DirectoryTraverse\4. DirectoryTraverse.csproj", "{146E342F-B1FB-4268-8B25-5510E23DB6FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{2DEBD964-8272-4961-B8DD-30E40DEFAEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DEBD964-8272-4961-B8DD-30E40DEFAEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DEBD964-8272-4961-B8DD-30E40DEFAEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B081D9CE-120E-4443-86CE-DABCB962E114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B081D9CE-120E-4443-86CE-DABCB962E114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B081D9CE-120E-4443-86CE-DABCB962E114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B081D9CE-120E-4443-86CE-DABCB962E114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146E342F-B1FB-4268-8B25-5510E23DB6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146E342F-B1FB-4268-8B25-5510E23DB6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146E342F-B1FB-4268-8B25-5510E23DB6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146E342F-B1FB-4268-8B25-5510E23DB6FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
