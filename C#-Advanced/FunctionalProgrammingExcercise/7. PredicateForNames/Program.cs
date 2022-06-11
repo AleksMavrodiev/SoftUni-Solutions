@@ -7,8 +7,8 @@ namespace _7._PredicateForNames
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            Predicate<string> lengthCheck = x => x.Length == n;
-            string[] words = Console.ReadLine().Split();
+            Predicate<string> lengthCheck = x => x.Length <= n;
+            string[] words = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < words.Length; i++)
             {
                 if (lengthCheck(words[i]))
