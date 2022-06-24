@@ -4,61 +4,48 @@ using System.Linq;
 
 namespace _7._TruckTour
 {
-    class Pump
-    {
-        public Pump(int index, int fuel, int distanceToNext)
-        {
-            this.Index = index;
-            this.Fuel = fuel;
-            this.DistanceToNext = distanceToNext;
-        }
-        public int Index { get; set; }
-        public int Fuel { get; set; }
-        public int DistanceToNext { get; set; }
-    }
+    
     internal class Program
     {
         static void Main(string[] args)
         {
-            Queue<Pump> circle = new Queue<Pump>();
-            long currentFuel = 0;
-            int startIndex = int.MinValue;
-            int numberPumps = int.Parse(Console.ReadLine());
-            for (int i = 0; i < numberPumps; i++)
+            int numberOfPums = int.Parse(Console.ReadLine());
+
+            Queue<int[]> queue = new Queue<int[]>();
+            for (int i = 0; i < numberOfPums; i++)
             {
-                int[] data = Console.ReadLine().Split().Select(int.Parse).ToArray();
-                int fuel = data[0];
-                int distance = data[1];
-                circle.Enqueue(new Pump(i, fuel, distance));
+                int[] inputLitterPump = Console.ReadLine().Split().Select(int.Parse).ToArray();
+                queue.Enqueue(inputLitterPump);
             }
+            int startIndex = 0;
             while (true)
             {
-                bool isValid = true;
-                foreach (var pump in circle)
+                bool isValidPump = true;
+
+                int totalLitters = 0;
+                foreach (int[] item in queue)
                 {
-                    startIndex = circle.Peek().Index;
-                    currentFuel += circle.Peek().Fuel;
-                    int disctance = circle.Peek().DistanceToNext;
-                    Pump currPump = new Pump(startIndex, circle.Peek().Fuel, disctance);
-                    
-                    if(currentFuel - disctance < 0)
+
+                    int litters = item[0];
+                    totalLitters += litters;
+                    int distance = item[1];
+                    if (totalLitters - distance < 0)
                     {
-                        isValid = false;
-                        startIndex = int.MinValue;
-                        currentFuel = 0;
-                        circle.Dequeue();
-                        circle.Enqueue(currPump);
+                        startIndex += 1;
+                        int[] currentPum = queue.Dequeue();
+                        queue.Enqueue(currentPum);
+                        isValidPump = false;
                         break;
                     }
-                    currentFuel -= disctance;
+                    totalLitters -= distance;
                 }
-                if (isValid)
+                if (isValidPump)
                 {
                     Console.WriteLine(startIndex);
                     break;
                 }
             }
-            
+
         }
     }
 }

@@ -60,7 +60,7 @@ namespace DefiningClasses
                     bool isInt = double.TryParse(input[2], out ignoreMe);
                     if (isInt)
                     {
-                        double weight = double.Parse(Console.ReadLine());
+                        double weight = double.Parse(input[2]);
                         cars.Add(new Car(model, givenEngine, weight));
                     }
                     else
