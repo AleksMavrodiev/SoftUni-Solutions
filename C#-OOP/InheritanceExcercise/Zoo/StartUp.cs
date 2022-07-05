@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-
+            Bear paddington = new Bear("Paddington");
         }
     }
 }
