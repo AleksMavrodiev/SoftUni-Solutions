@@ -8,7 +8,7 @@ namespace PizzaCalories
         {
             try
             {
-                string[] pizzaInfo = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                string[] pizzaInfo = Console.ReadLine().Split(' ');
                 string pizzaName = pizzaInfo[1];
 
                 string[] doughInfo = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
