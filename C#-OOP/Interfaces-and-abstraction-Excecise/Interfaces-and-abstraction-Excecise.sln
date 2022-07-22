@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Define-an-Interface-IPerson", "01. Define-an-Interface-IPerson\01. Define-an-Interface-IPerson.csproj", "{50D16785-0DCB-4655-AA3F-469997B6769C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Define-an-Interface-IPerson", "01. Define-an-Interface-IPerson\01. Define-an-Interface-IPerson.csproj", "{50D16785-0DCB-4655-AA3F-469997B6769C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Multiple-Implementation", "02.Multiple-Implementation\02.Multiple-Implementation.csproj", "{141C4296-9629-447E-BCC1-15E5E8814FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Multiple-Implementation", "02.Multiple-Implementation\02.Multiple-Implementation.csproj", "{141C4296-9629-447E-BCC1-15E5E8814FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Telephony", "03.Telephony\03.Telephony.csproj", "{5BD421C7-1C33-40EE-BFEE-49ECA9F59367}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Telephony", "03.Telephony\03.Telephony.csproj", "{5BD421C7-1C33-40EE-BFEE-49ECA9F59367}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Border-Control", "4.Border Control\4.Border-Control.csproj", "{261DA2E4-8118-43C8-812F-165A465D8A2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.Border-Control", "4.Border Control\4.Border-Control.csproj", "{261DA2E4-8118-43C8-812F-165A465D8A2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.Birthday-Celebrations", "05.Birthday-Celebrations\05.Birthday-Celebrations.csproj", "{567AFC83-6520-4995-8A64-51C7DA8F6273}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Food-Shortage", "06.Food-Shortage\06.Food-Shortage.csproj", "{F56ABD11-0824-48F2-AC6C-2A6AB3820F09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Collection-Hierarchy", "08.Collection-Hierarchy\08.Collection-Hierarchy.csproj", "{56ACADE4-C71D-43B1-B489-EDEE1413E517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Explicit-Interfaces", "09.Explicit-Interfaces\09.Explicit-Interfaces.csproj", "{014435B6-F02C-4B8B-A743-D105847F2F20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{261DA2E4-8118-43C8-812F-165A465D8A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{261DA2E4-8118-43C8-812F-165A465D8A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{261DA2E4-8118-43C8-812F-165A465D8A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567AFC83-6520-4995-8A64-51C7DA8F6273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567AFC83-6520-4995-8A64-51C7DA8F6273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567AFC83-6520-4995-8A64-51C7DA8F6273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567AFC83-6520-4995-8A64-51C7DA8F6273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56ABD11-0824-48F2-AC6C-2A6AB3820F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56ABD11-0824-48F2-AC6C-2A6AB3820F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56ABD11-0824-48F2-AC6C-2A6AB3820F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56ABD11-0824-48F2-AC6C-2A6AB3820F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56ACADE4-C71D-43B1-B489-EDEE1413E517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56ACADE4-C71D-43B1-B489-EDEE1413E517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56ACADE4-C71D-43B1-B489-EDEE1413E517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56ACADE4-C71D-43B1-B489-EDEE1413E517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014435B6-F02C-4B8B-A743-D105847F2F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014435B6-F02C-4B8B-A743-D105847F2F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014435B6-F02C-4B8B-A743-D105847F2F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014435B6-F02C-4B8B-A743-D105847F2F20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
