@@ -7,7 +7,7 @@ function check(x1, y1, x2, y2){
     let areBothValid = Number.isInteger(checkBoth);
     console.log(`{${x1}, ${y1}} to {0, 0} is ${isFirstValid ? "valid" : "invalid"}`);
     console.log(`{${x2}, ${y2}} to {0, 0} is ${isSecondValid ? "valid" : "invalid"}`);
-    console.log(`{${x1}, ${y1}} to ${x2}, ${y2}} is ${areBothValid ? "valid" : "invalid"}`);
+    console.log(`{${x1}, ${y1}} to {${x2}, ${y2}} is ${areBothValid ? "valid" : "invalid"}`);
 }
 
 check(2, 1, 1, 1);
