@@ -33,9 +33,9 @@ function carFactory(carRequirements){
 
     let wheelSize = carRequirements.wheelsize % 2 == 0 ? carRequirements.wheelsize - 1 : carRequirements.wheelsize;
 
-    result.wheelsize = new Array(4).fill(wheelSize);
+    result.wheels = new Array(4).fill(wheelSize);
     
-    console.log(result);
+    return result;
 }
 
 carFactory({ model: 'VW Golf II',
