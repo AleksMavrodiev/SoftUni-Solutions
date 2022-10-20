@@ -16,6 +16,9 @@ class Stringer{
     }
 
     toString(){
+        if(this.length == 0){
+            return "...";
+        }
         let result = this.innerText;
         if(this.innerText.length > this.innerLength){
             let elementsToRemove = this.innerText.length - this.innerLength;
