@@ -2,8 +2,11 @@
 
 namespace MiniORM
 {
-    public class DbContext
+    public abstract class DbContext
     {
+        private readonly DatabaseConnection connection;
+        private readonly IDictionary<Type, PropertyInfo> dbSets;
+
         public static Type[] AllowedSqlTypes;
     }
 }
