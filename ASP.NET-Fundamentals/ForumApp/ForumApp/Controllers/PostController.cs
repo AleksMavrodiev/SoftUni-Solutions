@@ -1,5 +1,6 @@
 ﻿using ForumApp.Core.Contracts;
 using ForumApp.Core.Models;
+using ForumApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
@@ -60,6 +61,42 @@ namespace ForumApp.Controllers
             {
                 return this.RedirectToAction("All", "Post");
             }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(string id, PostFormModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return this.View(model);
+            }
+
+            try
+            {
+                await this.postService.EditByIdAsync(id, model);
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError(string.Empty, "Unexpected error occurred while updating your post!");
+                return View(model);
+            }
+
+            return RedirectToAction("All");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> DeleteById(string id)
+        {
+            try
+            {
+                await this.postService.DeleteByIdAsync(id);
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError(string.Empty, "Unexpected error occurred while updating your post!");
+            }
+            return RedirectToAction("All");
         }
     }
 }

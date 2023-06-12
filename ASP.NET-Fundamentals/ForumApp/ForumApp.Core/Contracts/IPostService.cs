@@ -13,5 +13,7 @@ namespace ForumApp.Core.Contracts
         Task AddPostAsync(PostFormModel postFormModel);
 
         Task<PostFormModel> GetPostByIdAsync(string postId);
+        Task EditByIdAsync(string postId, PostFormModel model);
+        Task DeleteByIdAsync(string postId);
     }
 }

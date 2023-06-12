@@ -44,7 +44,7 @@ namespace ForumApp.Core
 
         public async Task<PostFormModel> GetPostByIdAsync(string postId)
         {
-            Post postToEdit = await this.dbContext.Posts.FindAsync(postId.ToString());
+            Post postToEdit = await this.dbContext.Posts.FirstOrDefaultAsync(p => p.Id.ToString() == postId);
 
             return new PostFormModel()
             {
@@ -52,6 +52,22 @@ namespace ForumApp.Core
                 Content = postToEdit.Content
             };
 
+        }
+
+        public async Task EditByIdAsync(string postId, PostFormModel model)
+        {
+            Post post = await this.dbContext.Posts.FirstOrDefaultAsync(p => p.Id.ToString() == postId);
+            post.Content = model.Content;
+            post.Title = model.Title;
+
+            await this.dbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteByIdAsync(string postId)
+        {
+            Post post = await this.dbContext.Posts.FirstOrDefaultAsync(p => p.Id.ToString() == postId);
+            this.dbContext.Posts.Remove(post);
+            await this.dbContext.SaveChangesAsync();
         }
     }
 }
