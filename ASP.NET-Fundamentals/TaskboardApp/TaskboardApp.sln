@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskboardApp", "TaskboardApp\TaskboardApp.csproj", "{D36A3A6A-F0C9-4AEA-847E-943953975805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskboardApp.Data", "TaskboardApp.Data\TaskboardApp.Data.csproj", "{2EE8A066-BEF0-40F5-86B9-A7D4C19E5352}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D36A3A6A-F0C9-4AEA-847E-943953975805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36A3A6A-F0C9-4AEA-847E-943953975805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36A3A6A-F0C9-4AEA-847E-943953975805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36A3A6A-F0C9-4AEA-847E-943953975805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE8A066-BEF0-40F5-86B9-A7D4C19E5352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE8A066-BEF0-40F5-86B9-A7D4C19E5352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE8A066-BEF0-40F5-86B9-A7D4C19E5352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE8A066-BEF0-40F5-86B9-A7D4C19E5352}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A3B333B-847C-4A4A-8D2D-76ABCC95023A}
+	EndGlobalSection
+EndGlobal
