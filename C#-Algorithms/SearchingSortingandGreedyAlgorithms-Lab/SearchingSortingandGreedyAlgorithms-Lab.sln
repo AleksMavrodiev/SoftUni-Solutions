@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSort", "BubbleSort\Bu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{D675A9B4-5F61-4500-8A9F-B8BC661B53C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{AFFC31EB-9AA0-4891-9948-C95C71A10D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\QuickSort.csproj", "{AFFC31EB-9AA0-4891-9948-C95C71A10D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{AB21D23B-998A-44F0-A072-19A12573926B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetOfCoins", "SetOfCoins\SetOfCoins.csproj", "{F11BFCFB-65EE-4663-867D-DD793D39B709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{AFFC31EB-9AA0-4891-9948-C95C71A10D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFC31EB-9AA0-4891-9948-C95C71A10D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFC31EB-9AA0-4891-9948-C95C71A10D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB21D23B-998A-44F0-A072-19A12573926B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB21D23B-998A-44F0-A072-19A12573926B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB21D23B-998A-44F0-A072-19A12573926B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB21D23B-998A-44F0-A072-19A12573926B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11BFCFB-65EE-4663-867D-DD793D39B709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11BFCFB-65EE-4663-867D-DD793D39B709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11BFCFB-65EE-4663-867D-DD793D39B709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11BFCFB-65EE-4663-867D-DD793D39B709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
