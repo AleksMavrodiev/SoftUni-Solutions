@@ -13,5 +13,6 @@ namespace HouseRentingSystem.Data.Models
         [MaxLength(DataConstrainst.Category.NameMaxLength)]
         public string Name { get; set; } = null!;
 
+        public IEnumerable<House> Houses { get; set; }
     }
 }

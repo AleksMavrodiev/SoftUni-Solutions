@@ -4,6 +4,7 @@ using HouseRentingSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HouseRentingSystem.Data.Migrations
 {
     [DbContext(typeof(HouseRenting))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230721102326_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -104,9 +106,6 @@ namespace HouseRentingSystem.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -142,7 +141,6 @@ namespace HouseRentingSystem.Data.Migrations
                             Address = "North London, UK (near the border)",
                             AgentId = new Guid("dea12856-c198-4129-b3f3-b893d8395082"),
                             CategoryId = 3,
-                            CreatedOn = new DateTime(2023, 7, 21, 11, 42, 41, 797, DateTimeKind.Utc).AddTicks(8712),
                             Description = "A big house for your whole family. Don't miss to buy a house with three bedrooms.",
                             ImageUrl = "https://www.luxury-architecture.net/wpcontent/uploads/2017/12/1513217889-7597-FAIRWAYS-010.jpg",
                             PricePerMonth = 2100.00m,
@@ -151,11 +149,10 @@ namespace HouseRentingSystem.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("421c8437-484a-4228-bd72-2926e17258f4"),
+                            Id = new Guid("60cd22dc-a421-438f-82f8-5c26ddc005f9"),
                             Address = "Near the Sea Garden in Burgas, Bulgaria",
                             AgentId = new Guid("dea12856-c198-4129-b3f3-b893d8395082"),
                             CategoryId = 2,
-                            CreatedOn = new DateTime(2023, 7, 21, 11, 42, 41, 797, DateTimeKind.Utc).AddTicks(8720),
                             Description = "It has the best comfort you will ever ask for. With two bedrooms, it is great for your family.",
                             ImageUrl = "https://cf.bstatic.com/xdata/images/hotel/max1024x768/179489660.jpg?k=2029f6d9589b49c95dcc9503a265e292c2cdfcb5277487a0050397c3f8dd545a & o = &hp = 1",
                             PricePerMonth = 1200.00m,
@@ -168,7 +165,6 @@ namespace HouseRentingSystem.Data.Migrations
                             Address = "Boyana Neighbourhood, Sofia, Bulgaria",
                             AgentId = new Guid("dea12856-c198-4129-b3f3-b893d8395082"),
                             CategoryId = 2,
-                            CreatedOn = new DateTime(2023, 7, 21, 11, 42, 41, 797, DateTimeKind.Utc).AddTicks(8723),
                             Description = "This luxurious house is everything you will need. It is just excellent.",
                             ImageUrl = "https://i.pinimg.com/originals/a6/f5/85/a6f5850a77633c56e4e4ac4f867e3c00.jpg",
                             PricePerMonth = 2000.00m,
@@ -298,15 +294,15 @@ namespace HouseRentingSystem.Data.Migrations
                         {
                             Id = "dea12856-c198-4129-b3f3-b893d8395082",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "88bef8dc-dae5-4be6-956a-11810887edf1",
+                            ConcurrencyStamp = "e613b8f7-a8c6-4e61-afca-a08f0103c477",
                             Email = "agent@mail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "agent@mail.com",
                             NormalizedUserName = "agent@mail.com",
-                            PasswordHash = "AQAAAAEAACcQAAAAEL2/ZYgNjPUqG+QIr7NGGxRGEu4N540cERYZmCH6mewMlLCZPtjmGf03EZAleOgJyw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGhTJ5jde+yjIq9ZTYLGStK9mOtUigc+3uj/gKBiI+BMfSilEO2FROeeIvKpK1/VXg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "27478716-4c3a-46bf-9d4a-d5d52c676754",
+                            SecurityStamp = "1ece5fe9-da85-4c62-8544-19e49f7a4dfd",
                             TwoFactorEnabled = false,
                             UserName = "agent@mail.com"
                         },
@@ -314,15 +310,15 @@ namespace HouseRentingSystem.Data.Migrations
                         {
                             Id = "6d5800ce-d726-4fc8-83d9-d6b3ac1f591e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a0d2c241-030f-4903-ba8d-4f539de87ead",
+                            ConcurrencyStamp = "f9fd2762-38f8-4abc-a775-ff682515d4ae",
                             Email = "guest@mail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "guest@mail.com",
                             NormalizedUserName = "guest@mail.com",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOQ+GMZiuxEGzciqbLFXcqwMxLmaPwoBmqUr/qIWdFaQFMVCprlnWR9yVJpng1T4zw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGFnojviFVA6N2iVNmEU199m5R3dODIE+hSfhgZDODC6N8RFtQLK5wvQXh2XSqZdEg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "74b5c4fc-f7c3-489f-a332-a587a5f9a4cc",
+                            SecurityStamp = "49e346c9-9eae-4cb3-8231-dfca4a2a0195",
                             TwoFactorEnabled = false,
                             UserName = "guest@mail.com"
                         });
